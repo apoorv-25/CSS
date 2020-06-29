@@ -1,0 +1,16 @@
+body{
+	background-color: yellow;
+}
+.firstclass{
+	color: blue;
+	font-size: 300%;
+
+}
+.lastclass{
+	color: purple;
+	font-size: 500%;
+
+}
+.fontadjust{
+	font-size: 250%;
+}

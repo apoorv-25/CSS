@@ -1,0 +1,20 @@
+function checkPass() { var pass1 = document.getElementById('pass1'); 
+var pass2 = document.getElementById('pass2'); 
+var message = document.getElementById('error'); 
+var col1="green"; var col2="red"; 
+if(pass1.value == pass2.value){ message.style.color = col1; message.innerHTML = "ok!" } 
+else{ message.style.color = col2; message.innerHTML = " These passwords don't match" } } 
+
+function validateFirstName() {//test input for 2-6 allowed characters var fName=document.getElementById("firstName").value;
+ var reg1=/^[a-zA-Z]{2,6}$/; 
+ var message1= document.getElementById('Prompt1');
+  var col1="green"; 
+  var col2="red"; 
+  if(reg1.test(fName)) {// Input is valid message1.style.color=col1; message1.innerHTML="valid"; } 
+  else {// Input is invalid message1.style.color=col2; message1.innerHTML="Enter 2-6 character "; } } 
+  function validateLastName() {//test input for 2-5 allowed characters
+   var lName=document.getElementById("lastName").value; var reg2=/^[a-zA-Z]{2,5}$/; var message2= document.getElementById('Prompt2'); 
+   var col1="green";
+    var col2="red";
+     if(reg2.test(lName)) { message2.style.color=col1; message2.innerHTML="valid"; }
+      else {// Input is invalid message2.style.color=col2; message2.innerHTML="Enter 2-5 characters"; } }
